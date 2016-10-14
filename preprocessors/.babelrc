@@ -1,0 +1,70 @@
+{
+  "plugins": [
+    [
+      "transform-es2015-modules-amd"
+    ],
+    [
+      "minify-constant-folding"
+    ],
+    [
+      "minify-dead-code-elimination"
+    ],
+    [
+      "minify-guarded-expressions"
+    ],
+    [
+      "minify-infinity"
+    ],
+    [
+      "minify-mangle-names"
+    ],
+    [
+      "minify-simplify"
+    ],
+    [
+      "minify-type-constructors"
+    ],
+    [
+      "transform-member-expression-literals"
+    ],
+    [
+      "transform-merge-sibling-variables"
+    ],
+    [
+      "transform-minify-booleans"
+    ],
+    [
+      "transform-property-literals"
+    ],
+    [
+      "minify-empty-function"
+    ],
+    [
+      "transform-remove-debugger"
+    ],
+    [
+      "transform-remove-console"
+    ],
+    [
+      "minify-replace",
+      {
+        "replacements": [
+          {
+            "identifierName": "__DEV__",
+            "replacement": {
+              "type": "booleanLiteral",
+              "value": true
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "babili"
+      ]
+    }
+  }
+}
