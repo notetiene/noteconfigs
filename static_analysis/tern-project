@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "es_modules": {},
+    "complete_strings": {}
+  },
+  "libs": [
+    "browser"
+  ],
+  "loadEagerly": [
+    "js/helpers.js",
+    "src/js/*.js"
+  ]
+}
