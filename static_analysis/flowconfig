@@ -1,0 +1,12 @@
+[ignore]
+./node_modules/*
+./extern/*
+./vendor/*
+
+[include]
+./src/scripts/*\.js
+./src/js/*\.js
+
+[libs]
+
+[options]
