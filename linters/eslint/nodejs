@@ -1,0 +1,22 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "callback-return": ["error", ["callback"]],
+        "global-require": ["error"],
+        "handle-callback-err": ["error", "^.*(e|E)rr"],
+        "no-mixed-requires": ["error", {"grouping": false, "allowCall": false}],
+        "no-new-require": ["error"],
+        "no-path-concat": ["error"],
+        "no-process-env)": ["off"],
+        "no-process-exit": ["off"],
+        "no-restricted-modules": ["error"],
+        "no-sync": ["error"]
+    }
+}
